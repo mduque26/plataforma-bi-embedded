@@ -1,0 +1,13 @@
+# Copie este arquivo para .dev.vars. Nunca versione o arquivo real.
+# Identificador do diretório Microsoft Entra ID (GUID). Substitua por YOUR_TENANT_ID quando integrar.
+ENTRA_TENANT_ID=""
+# Application (client) ID do App Registration. Substitua por YOUR_CLIENT_ID.
+ENTRA_CLIENT_ID=""
+# Segredo do service principal, usado somente no Worker para Graph e Power BI. Substitua por YOUR_CLIENT_SECRET.
+ENTRA_CLIENT_SECRET=""
+# Base da Microsoft Graph API. Altere apenas para nuvens soberanas compatíveis.
+GRAPH_API_ENDPOINT="https://graph.microsoft.com/v1.0"
+# Base da Power BI REST API. Altere apenas quando sua nuvem Microsoft exigir.
+POWERBI_API_ENDPOINT="https://api.powerbi.com/v1.0/myorg"
+# Gere ao menos 32 bytes aleatórios. Reserve para assinatura/rotação de sessões.
+SESSION_SECRET="YOUR_32_BYTE_OR_LONGER_RANDOM_SECRET"

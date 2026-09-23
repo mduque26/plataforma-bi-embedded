@@ -1,0 +1,28 @@
+name = "shipbi-white-label"
+main = "src/index.ts"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+APP_ENV = "development"
+APP_BASE_URL = "http://localhost:8787"
+DEV_AUTH_ENABLED = "true"
+DEFAULT_TENANT_SLUG = "empresa-alfa"
+POWERBI_TOKEN_STRATEGY = "service_principal"
+GRAPH_API_ENDPOINT = "https://graph.microsoft.com/v1.0"
+POWERBI_API_ENDPOINT = "https://api.powerbi.com/v1.0/myorg"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "shipbi-local"
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "migrations"
+
+[assets]
+directory = "./site"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+run_worker_first = true
+
+[observability]
+enabled = true
